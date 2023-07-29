@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61A7D541FDBC6E04540F494D /* Pods_VK_App_VVR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E89B62B4258E6978AAB3B99 /* Pods_VK_App_VVR.framework */; };
 		E5AA0B0E2A73062B009770D0 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5AA0B0D2A73062B009770D0 /* HeaderView.xib */; };
 		E5AA0B102A730670009770D0 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AA0B0F2A730670009770D0 /* HeaderView.swift */; };
+		E5D5908E2A7544FD00044EC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5D5908D2A7544FD00044EC6 /* GoogleService-Info.plist */; };
 		E5F2A8E72A55F512005C99E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2A8E62A55F512005C99E3 /* AppDelegate.swift */; };
 		E5F2A8E92A55F512005C99E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2A8E82A55F512005C99E3 /* SceneDelegate.swift */; };
 		E5F2A8EB2A55F512005C99E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2A8EA2A55F512005C99E3 /* ViewController.swift */; };
@@ -26,8 +28,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E89B62B4258E6978AAB3B99 /* Pods_VK_App_VVR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VK_App_VVR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EE795A86EE426ED3D807B2A /* Pods-VK_App_VVR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK_App_VVR.release.xcconfig"; path = "Target Support Files/Pods-VK_App_VVR/Pods-VK_App_VVR.release.xcconfig"; sourceTree = "<group>"; };
+		BC0969A0A69AE47FEE7EECDD /* Pods-VK_App_VVR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK_App_VVR.debug.xcconfig"; path = "Target Support Files/Pods-VK_App_VVR/Pods-VK_App_VVR.debug.xcconfig"; sourceTree = "<group>"; };
 		E5AA0B0D2A73062B009770D0 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		E5AA0B0F2A730670009770D0 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		E5D5908D2A7544FD00044EC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E5F2A8E32A55F512005C99E3 /* VK_App_VVR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VK_App_VVR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5F2A8E62A55F512005C99E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5F2A8E82A55F512005C99E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,12 +57,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61A7D541FDBC6E04540F494D /* Pods_VK_App_VVR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04823B3A371E6155E7D03163 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC0969A0A69AE47FEE7EECDD /* Pods-VK_App_VVR.debug.xcconfig */,
+				7EE795A86EE426ED3D807B2A /* Pods-VK_App_VVR.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7485DA1DF9E2DE6A894917BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E89B62B4258E6978AAB3B99 /* Pods_VK_App_VVR.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E5AA0B0C2A7305C1009770D0 /* Header */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +96,8 @@
 			children = (
 				E5F2A8E52A55F512005C99E3 /* VK_App_VVR */,
 				E5F2A8E42A55F512005C99E3 /* Products */,
+				04823B3A371E6155E7D03163 /* Pods */,
+				7485DA1DF9E2DE6A894917BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +117,7 @@
 				E5F2A8FC2A55F87A005C99E3 /* TapBar */,
 				E5F2A8EF2A55F512005C99E3 /* Assets.xcassets */,
 				E5F2A8F42A55F512005C99E3 /* Info.plist */,
+				E5D5908D2A7544FD00044EC6 /* GoogleService-Info.plist */,
 			);
 			path = VK_App_VVR;
 			sourceTree = "<group>";
@@ -176,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5F2A8F72A55F512005C99E3 /* Build configuration list for PBXNativeTarget "VK_App_VVR" */;
 			buildPhases = (
+				29E8430EBE2EE1FCE1AEA3C2 /* [CP] Check Pods Manifest.lock */,
 				E5F2A8DF2A55F512005C99E3 /* Sources */,
 				E5F2A8E02A55F512005C99E3 /* Frameworks */,
 				E5F2A8E12A55F512005C99E3 /* Resources */,
+				55901736051D297F71633763 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,10 +262,53 @@
 				E5F2A8F32A55F512005C99E3 /* LaunchScreen.storyboard in Resources */,
 				E5F2A8F02A55F512005C99E3 /* Assets.xcassets in Resources */,
 				E5F2A8EE2A55F512005C99E3 /* Main.storyboard in Resources */,
+				E5D5908E2A7544FD00044EC6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29E8430EBE2EE1FCE1AEA3C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VK_App_VVR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55901736051D297F71633763 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VK_App_VVR/Pods-VK_App_VVR-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VK_App_VVR/Pods-VK_App_VVR-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VK_App_VVR/Pods-VK_App_VVR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E5F2A8DF2A55F512005C99E3 /* Sources */ = {
@@ -394,6 +467,7 @@
 		};
 		E5F2A8F82A55F512005C99E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC0969A0A69AE47FEE7EECDD /* Pods-VK_App_VVR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -422,6 +496,7 @@
 		};
 		E5F2A8F92A55F512005C99E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EE795A86EE426ED3D807B2A /* Pods-VK_App_VVR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
