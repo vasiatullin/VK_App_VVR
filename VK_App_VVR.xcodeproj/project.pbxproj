@@ -11,6 +11,8 @@
 		E5AA0B0E2A73062B009770D0 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5AA0B0D2A73062B009770D0 /* HeaderView.xib */; };
 		E5AA0B102A730670009770D0 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AA0B0F2A730670009770D0 /* HeaderView.swift */; };
 		E5D5908E2A7544FD00044EC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5D5908D2A7544FD00044EC6 /* GoogleService-Info.plist */; };
+		E5EC3A0A2A7AE0C00040F3C8 /* APIManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EC3A092A7AE0C00040F3C8 /* APIManeger.swift */; };
+		E5EC3A0C2A7AECED0040F3C8 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EC3A0B2A7AECED0040F3C8 /* FeedTableViewCell.swift */; };
 		E5F2A8E72A55F512005C99E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2A8E62A55F512005C99E3 /* AppDelegate.swift */; };
 		E5F2A8E92A55F512005C99E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2A8E82A55F512005C99E3 /* SceneDelegate.swift */; };
 		E5F2A8EB2A55F512005C99E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2A8EA2A55F512005C99E3 /* ViewController.swift */; };
@@ -34,6 +36,8 @@
 		E5AA0B0D2A73062B009770D0 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		E5AA0B0F2A730670009770D0 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		E5D5908D2A7544FD00044EC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E5EC3A092A7AE0C00040F3C8 /* APIManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManeger.swift; sourceTree = "<group>"; };
+		E5EC3A0B2A7AECED0040F3C8 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		E5F2A8E32A55F512005C99E3 /* VK_App_VVR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VK_App_VVR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5F2A8E62A55F512005C99E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5F2A8E82A55F512005C99E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +74,6 @@
 				BC0969A0A69AE47FEE7EECDD /* Pods-VK_App_VVR.debug.xcconfig */,
 				7EE795A86EE426ED3D807B2A /* Pods-VK_App_VVR.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -159,6 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				E5F2A90A2A5B34C3005C99E3 /* FeedViewController.swift */,
+				E5EC3A092A7AE0C00040F3C8 /* APIManeger.swift */,
+				E5EC3A0B2A7AECED0040F3C8 /* FeedTableViewCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -317,12 +322,14 @@
 			files = (
 				E5F2A90D2A5B34DB005C99E3 /* SearchViewController.swift in Sources */,
 				E5F2A8EB2A55F512005C99E3 /* ViewController.swift in Sources */,
+				E5EC3A0C2A7AECED0040F3C8 /* FeedTableViewCell.swift in Sources */,
 				E5F2A9042A5B32DD005C99E3 /* TabbarController.swift in Sources */,
 				E5F2A9152A5B3B4A005C99E3 /* ProfileTableViewCell.swift in Sources */,
 				E5F2A90F2A5B34F0005C99E3 /* ChatViewController.swift in Sources */,
 				E5F2A90B2A5B34C3005C99E3 /* FeedViewController.swift in Sources */,
 				E5F2A8E72A55F512005C99E3 /* AppDelegate.swift in Sources */,
 				E5AA0B102A730670009770D0 /* HeaderView.swift in Sources */,
+				E5EC3A0A2A7AE0C00040F3C8 /* APIManeger.swift in Sources */,
 				E5F2A9132A5B3528005C99E3 /* ProfileViewController.swift in Sources */,
 				E5F2A8E92A55F512005C99E3 /* SceneDelegate.swift in Sources */,
 				E5F2A9112A5B3510005C99E3 /* NotificationsViewController.swift in Sources */,

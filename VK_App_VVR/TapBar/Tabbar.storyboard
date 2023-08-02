@@ -47,14 +47,70 @@
                     <view key="view" contentMode="scaleToFill" id="18Y-06-yS0">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vTs-dZ-hTR">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="270" id="g1c-gi-fd8" customClass="ProfileTableViewCell" customModule="VK_App_VVR">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="270"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g1c-gi-fd8" id="5wM-eO-YuR">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="270"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="4h4-wB-TMf">
+                                                    <rect key="frame" x="30" y="21" width="353" height="228"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fW-S9-V3S">
+                                                            <rect key="frame" x="0.0" y="0.0" width="44.333333333333336" height="20.333333333333332"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                            <color key="textColor" red="0.19607841970000001" green="0.45098042490000001" blue="0.86274516580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdE-kk-hht">
+                                                            <rect key="frame" x="0.0" y="37.333333333333336" width="35.333333333333336" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.43477541209999998" green="0.44166651369999999" blue="0.47659295800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6b-WG-DXd">
+                                                            <rect key="frame" x="0.0" y="71.333333333333329" width="41.333333333333336" height="20.333333333333329"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mBH-LN-YkS">
+                                                            <rect key="frame" x="0.0" y="108.66666666666666" width="353" height="119.33333333333334"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4h4-wB-TMf" firstAttribute="top" secondItem="5wM-eO-YuR" secondAttribute="topMargin" constant="10" id="Ao7-dp-Vp5"/>
+                                                <constraint firstItem="4h4-wB-TMf" firstAttribute="trailing" secondItem="5wM-eO-YuR" secondAttribute="trailingMargin" constant="10" id="NC3-TD-U4Z"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="4h4-wB-TMf" secondAttribute="bottom" constant="10" id="WH1-q6-fk9"/>
+                                                <constraint firstItem="4h4-wB-TMf" firstAttribute="leading" secondItem="5wM-eO-YuR" secondAttribute="leadingMargin" constant="10" id="vm5-Ol-r4N"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="af1-WR-kbZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vTs-dZ-hTR" firstAttribute="leading" secondItem="af1-WR-kbZ" secondAttribute="leading" id="BMt-Vx-oeZ"/>
+                            <constraint firstItem="vTs-dZ-hTR" firstAttribute="trailing" secondItem="af1-WR-kbZ" secondAttribute="trailing" id="K2Q-VL-OZg"/>
+                            <constraint firstItem="vTs-dZ-hTR" firstAttribute="top" secondItem="af1-WR-kbZ" secondAttribute="top" id="nTL-UC-wWs"/>
+                            <constraint firstItem="vTs-dZ-hTR" firstAttribute="bottom" secondItem="af1-WR-kbZ" secondAttribute="bottom" id="sQG-yJ-Ili"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="feed" id="70w-uP-giU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xlG-fQ-mM7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2326" y="554"/>
+            <point key="canvasLocation" x="-2329.0076335877861" y="553.52112676056345"/>
         </scene>
         <!--Tabbar-->
         <scene sceneID="eV0-Gg-D44">
@@ -117,7 +173,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="68" id="wQd-rf-BQk" customClass="ProfileTableViewCell" customModule="VK_App_VVR" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="68" id="wQd-rf-BQk" customClass="ProfileTableViewCell" customModule="VK_App_VVR" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="68"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wQd-rf-BQk" id="oP1-5T-7gh" customClass="ProfileTableViewCell" customModule="VK_App_VVR" customModuleProvider="target">
