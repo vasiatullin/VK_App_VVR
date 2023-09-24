@@ -3,13 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		61A7D541FDBC6E04540F494D /* Pods_VK_App_VVR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E89B62B4258E6978AAB3B99 /* Pods_VK_App_VVR.framework */; };
 		E5AA0B0E2A73062B009770D0 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5AA0B0D2A73062B009770D0 /* HeaderView.xib */; };
 		E5AA0B102A730670009770D0 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AA0B0F2A730670009770D0 /* HeaderView.swift */; };
+		E5AEB9442AC0B723007E6271 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AEB9432AC0B723007E6271 /* SearchTableViewCell.swift */; };
+		E5AEB9472AC0B7FD007E6271 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AEB9462AC0B7FD007E6271 /* ChatTableViewCell.swift */; };
 		E5D5908E2A7544FD00044EC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5D5908D2A7544FD00044EC6 /* GoogleService-Info.plist */; };
 		E5EC3A0A2A7AE0C00040F3C8 /* APIManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EC3A092A7AE0C00040F3C8 /* APIManeger.swift */; };
 		E5EC3A0C2A7AECED0040F3C8 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EC3A0B2A7AECED0040F3C8 /* FeedTableViewCell.swift */; };
@@ -35,6 +37,8 @@
 		BC0969A0A69AE47FEE7EECDD /* Pods-VK_App_VVR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK_App_VVR.debug.xcconfig"; path = "Target Support Files/Pods-VK_App_VVR/Pods-VK_App_VVR.debug.xcconfig"; sourceTree = "<group>"; };
 		E5AA0B0D2A73062B009770D0 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		E5AA0B0F2A730670009770D0 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		E5AEB9432AC0B723007E6271 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		E5AEB9462AC0B7FD007E6271 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		E5D5908D2A7544FD00044EC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E5EC3A092A7AE0C00040F3C8 /* APIManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManeger.swift; sourceTree = "<group>"; };
 		E5EC3A0B2A7AECED0040F3C8 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
@@ -172,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				E5F2A90C2A5B34DB005C99E3 /* SearchViewController.swift */,
+				E5AEB9432AC0B723007E6271 /* SearchTableViewCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				E5F2A90E2A5B34F0005C99E3 /* ChatViewController.swift */,
+				E5AEB9462AC0B7FD007E6271 /* ChatTableViewCell.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -232,7 +238,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					E5F2A8E22A55F512005C99E3 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -240,7 +246,7 @@
 				};
 			};
 			buildConfigurationList = E5F2A8DE2A55F512005C99E3 /* Build configuration list for PBXProject "VK_App_VVR" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -332,7 +338,9 @@
 				E5EC3A0A2A7AE0C00040F3C8 /* APIManeger.swift in Sources */,
 				E5F2A9132A5B3528005C99E3 /* ProfileViewController.swift in Sources */,
 				E5F2A8E92A55F512005C99E3 /* SceneDelegate.swift in Sources */,
+				E5AEB9472AC0B7FD007E6271 /* ChatTableViewCell.swift in Sources */,
 				E5F2A9112A5B3510005C99E3 /* NotificationsViewController.swift in Sources */,
+				E5AEB9442AC0B723007E6271 /* SearchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +402,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -454,6 +463,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -488,6 +498,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -517,6 +528,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
